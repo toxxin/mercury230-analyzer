@@ -28,9 +28,6 @@ void Mercury230Analyzer::ComputeSampleOffsets()
 
 	U32 num_bits = mSettings->mBitsPerTransfer;
 
-	if( mSettings->mMercury230Mode != Mercury230AnalyzerEnums::Normal )
-	num_bits++;
-
 	mSampleOffsets.push_back( clock_generator.AdvanceByHalfPeriod( 1.5 ) );  //point to the center of the 1st bit (past the start bit)
 	num_bits--;  //we just added the first bit.
 
@@ -66,9 +63,6 @@ void Mercury230Analyzer::WorkerThread()
 	mSampleRateHz = GetSampleRate();
 	ComputeSampleOffsets();
 	U32 num_bits = mSettings->mBitsPerTransfer;
-
-	if( mSettings->mMercury230Mode == Mercury230AnalyzerEnums::MpModeMsbOneMeansAddress || mSettings->mMercury230Mode == Mercury230AnalyzerEnums::MpModeMsbZeroMeansAddress)
-		num_bits++;
 
 	if( mSettings->mInverted == false )
 	{
