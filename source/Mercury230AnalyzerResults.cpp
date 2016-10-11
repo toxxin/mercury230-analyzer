@@ -34,8 +34,6 @@ void Mercury230AnalyzerResults::GenerateBubbleText( U64 frame_index, Channel& /*
 		parity_error = true;
 
 	U32 bits_per_transfer = mSettings->mBitsPerTransfer;
-	if( mSettings->mMercury230Mode != Mercury230AnalyzerEnums::Normal )
-		bits_per_transfer--;
 
 	if (mSettings->mMercury230Mode==Mercury230AnalyzerEnums::Mercury230Master || mSettings->mMercury230Mode==Mercury230AnalyzerEnums::Mercury230Slave)
 	{
@@ -268,8 +266,6 @@ void Mercury230AnalyzerResults::GenerateFrameTabularText( U64 frame_index, Displ
 
 
     U32 bits_per_transfer = mSettings->mBitsPerTransfer;
-    if( mSettings->mMercury230Mode != Mercury230AnalyzerEnums::Normal )
-        bits_per_transfer--;
 
     if (mSettings->mMercury230Mode==Mercury230AnalyzerEnums::Mercury230Master || mSettings->mMercury230Mode==Mercury230AnalyzerEnums::Mercury230Slave)
     {
