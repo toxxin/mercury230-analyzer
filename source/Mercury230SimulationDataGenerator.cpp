@@ -103,7 +103,7 @@ U32 Mercury230SimulationDataGenerator::GenerateSimulationData( U64 largest_sampl
 
 			ReadParamms(0x80, READ_PARAM_PARAM_STATE);
 			mMercury230SimulationData.Advance( mClockGenerator.AdvanceByTimeS( .015) );
-			
+
 			ReadParamms(0x80, READ_PARAM_PARAM_LOCATION);
 			mMercury230SimulationData.Advance( mClockGenerator.AdvanceByTimeS( .015) );
 			
