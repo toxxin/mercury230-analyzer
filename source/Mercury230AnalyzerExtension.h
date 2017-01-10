@@ -51,6 +51,7 @@
 #define READ_PARAM_PARAM_LOCATION				0x0B
 #define READ_PARAM_PARAM_SCHEDULE_MAX_POWER		0x0C
 #define READ_PARAM_PARAM_VALUE_MAX_POWER		0x0D
+#define READ_PARAM_PARAM_EXTENED				0x11
 
 enum ReadEnergyEnum {
 	FromReset = 0x00, CurentYear = 0x01, LastYear = 0x02, CurMonth = 0x03, LastMonth = 0x04

@@ -51,6 +51,7 @@ protected: //Mercury230 specific
 	void ReadOnOffTime(U8 DeviceID, U8 RecNumber);
 	void ReadEnergy(U8 DeviceID, ReadEnergyEnum param, U8 MonthNumber, U8 TarifNumber);
 	void ReadParamms(U8 DeviceID, U8 param);
+	void ReadExtendedParams(U8 DeviceID, U8 BWRI);
 
 };
 #endif //MERCURY230_SIMULATION_DATA_GENERATOR

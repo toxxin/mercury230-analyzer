@@ -240,6 +240,13 @@ void Mercury230SimulationDataGenerator::ReadParamms(U8 DeviceID, U8 param) {
 	SendPacket(q);
 }
 
+void Mercury230SimulationDataGenerator::ReadExtendedParams(U8 DeviceID, U8 BWRI) {
+	std::queue<U8> q;
+	q.push(DeviceID);
+	q.push(REQCODE_READ_DATA_PARAMS);
+	q.push(READ_PARAM_PARAM_EXTENED);
+	q.push(BWRI);
+}
 
 U16 Mercury230SimulationDataGenerator::update_CRC( U16 crc, U8 c )
 {
