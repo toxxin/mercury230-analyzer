@@ -170,12 +170,12 @@ void Mercury230AnalyzerResults::GenerateBubbleText( U64 frame_index, Channel& /*
 							sprintf( result_str, "DeviceID: %s, Func: Read params (%s), Location: (%s), ChkSum: %s", DeviceAddrStr, FunctionCodeStr, Param1Str, ChecksumStr );
 							break;
 						case READ_PARAM_PARAM_SCHEDULE_MAX_POWER:
-							AddResultString( "Read params: schedule max power" );
+							AddResultString( "Read params: Schedule max power" );
 							sprintf( result_str, "DeviceID: %s, Func: Read params (%s), Schedule max power: (%s), ChkSum: %s", DeviceAddrStr, FunctionCodeStr, Param1Str, ChecksumStr );
 							break;
 						case READ_PARAM_PARAM_VALUE_MAX_POWER:
-							AddResultString( "Read params: value max power" );
-							sprintf( result_str, "DeviceID: %s, Func: Read params (%s), Value max power: (%s), ChkSum: %s", DeviceAddrStr, FunctionCodeStr, Param1Str, ChecksumStr );
+							AddResultString( "Read params: Max power" );
+							sprintf( result_str, "DeviceID: %s, Func: Read params (%s), Max power: (%s), ChkSum: %s", DeviceAddrStr, FunctionCodeStr, Param1Str, ChecksumStr );
 							break;
 					}
 					break;
@@ -384,7 +384,7 @@ void Mercury230AnalyzerResults::GenerateFrameTabularText( U64 frame_index, Displ
 							sprintf( result_str, "DeviceID: %s, Func: Read params (%s), Schedule max power (%s), ChkSum: %s", DeviceAddrStr, FunctionCodeStr, Param1Str, ChecksumStr );
 							break;
 						case READ_PARAM_PARAM_VALUE_MAX_POWER:
-							sprintf( result_str, "DeviceID: %s, Func: Read params (%s), Value max power (%s), ChkSum: %s", DeviceAddrStr, FunctionCodeStr, Param1Str, ChecksumStr );
+							sprintf( result_str, "DeviceID: %s, Func: Read params (%s), Max power (%s), ChkSum: %s", DeviceAddrStr, FunctionCodeStr, Param1Str, ChecksumStr );
 							break;	
 					}
 					break;
